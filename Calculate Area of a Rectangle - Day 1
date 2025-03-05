@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        
+        try {
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            
+            double num1 = Double.parseDouble(br.readLine());
+            double num2 = Double.parseDouble(br.readLine());
+            
+            double result = num1 * num2;
+            
+            System.out.printf("%.1f\n", result);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
